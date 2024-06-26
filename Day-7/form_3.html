@@ -5,10 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>form part 3</title>
+    <style>
+        sup {
+            color: red;
+            font-size: 10px;
+        }
+
+        fieldset {
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body>
+    <form action="#">
+        <!-- <fieldset disabled>  -->
+        <!-- This will disable the fieldset -->
+        <fieldset>
+            <legend align="center">Login</legend>
 
+            <label for="full_name">Name </label> <!-- When we click on "Name" then also textbox will be selected -->
+            <input id="full_name" type="text" placeholder="Enter your name" required minlength="2"
+                maxlength="20"><br><br>
+
+            <label for="phone_no">Phone No. <!-- Another way of writing label (both ways are correct) -->
+                <input id="phone_no" type="tel" placeholder="+91-xxxxxxxxxx" minlength="10 " maxlength="10"><br><br>
+            </label>
+
+            <!--Be careful while giving id otherwise on clicking "Email" text box of Password will be selected -->
+            <label for="pass">Email<sup>*</sup></label>
+            <input id=email type="email" placeholder="Enter your email" required><br><br>
+
+            <label for="email">Password<sup>*</sup></label>
+            <input id=pass type="password" required> <br><br>
+
+            <!-- Submit and Reset -->
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+        </fieldset>
 </body>
 
 </html>
