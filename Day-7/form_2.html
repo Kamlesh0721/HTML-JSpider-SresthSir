@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form part 2</title>
+    <style>
+        sup {
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" autocomplete="off">
+        <!-- autocomplete ="off" -->
+        <!--It will turn off suggestions of what to fill when fill form -->
+        <!-- for ex when we enter name it gives us some suggestions of name that we have entered while filling that form previously-->
+        <!-- We can either write it in form tag = then it will apply to all form . Or-->
+        <!-- we can write it in input tag-->
+
+        <!-- Name <input type="text" value="Kamlesh Singh" readonly>
+        Mob <input type="text" disabled> -->
+
+        Name <input type="text" placeholder="Enter your name" required minlength="2" maxlength="20"><br><br>
+        Mob <input type="tel" placeholder="+91-xxxxxxxxxx" minlength="10 " maxlength="10"><br><br>
+        Email <sup>*</sup> <input type="email" placeholder="Enter your email" required><br><br>
+        Password <sup>*</sup> <input type="password" required> <br><br>
+
+        <!-- min , max and step-->
+        Salary <input type="number" min="50000" max="100000" step="10000"> <br><br>
+        Volume <input type="range" min="0" max="100" step="5"><br><br>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="cancel">
+
+    </form>
+</body>
+
+</html
