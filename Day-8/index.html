@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+
+    <!-- resize = none to stop text area from resizing -->
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Data list Or-->
+    <!-- Suggestion List Or-->
+    <!-- Auto Complete List -->
+    <!-- Difference Between AutoComplete/Suggestion/Data list and Select List-->
+    <!-- select list give us limited option but in AutoComplete if what we want is not 
+    \in list then we can enter it by ourself -->
+
+
+    State :<br>
+    <input type="text" name="state-name" required placeholder="Select your State" list="select-field">
+    <datalist id="select-field">
+        <option value="Delhi"></option>
+        <option value="UttarPradesh"></option>
+        <option value="Uttarakhand"></option>
+        <option value="Haryana"></option>
+        <option value="Punjab"></option>
+        <option value="Himachal Pradesh"></option>
+    </datalist>
+
+    <br>
+    Feedback:
+    <br>
+    <textarea name="user-feedback" id="feedback" required placeholder="Please give your feedback" rows="10" cols="30">
+
+    </textarea>
+</body>
+
+</html>
